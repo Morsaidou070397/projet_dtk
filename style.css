@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: white;
+}
+
+.header {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007BFF;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 120px;
+    border-radius: 50%;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background: url('images/hero-voyage.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+.hero p {
+    font-size: 18px;
+}
+
+.text-main {
+    width: 90%;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: none;
+    text-align: center;
+    margin: 50px auto 20px;
+
+}
+
+.text-main h1 {
+    font-size: 40px;
+    color: aqua;
+}
+
+.text-main p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.continent {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600px;
+    margin: 10px 0;
+}
+
+.continent:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.images {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.monument {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 1px 3px 5px;
+    border-radius: 35px;
+}
+
+.monument img {
+    width: 100%;
+    height: auto;
+}
+
+.continent,
+.monument {
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+.image {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.image h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: ;
+    transition: 0.5s;
+}
+
+.image:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f1f1f1;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.social-icons .bx {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.bx-heart-o {
+    color: #f44336;
+}
+
+/* Appropos */
+.apropos {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.equipe {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.equipe h1 {
+    padding-top: 0;
+}
+
+.equipe p {
+    padding: 15px 0 25px;
+}
+
+/* Formulaire de contact */
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 40px;
+}
+
+.form {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 760px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+    .text-main h1 {
+        font-size: 1.8rem;
+    }
+
+     h1 {
+        font-size: 1.6rem;
+    }
+     p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+      p {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
